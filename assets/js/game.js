@@ -72,7 +72,7 @@ function update() {
 function moveDoodler(e) {
   if (e.code == "ArrowRight" || e.code == "KeyD") {
     //move right
-    velocityX = 2;
+    velocityX = 4;
     doodler.img = doodlerRightImg;
   } else if (e.code == "ArrowLeft" || e.code == "KeyA") {
     //move left

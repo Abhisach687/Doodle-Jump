@@ -8,8 +8,8 @@ let doodlerY = (boardHeight * 7) / 8 - doodlerHeight;
 
 let velocityX = 0;
 let velocityY = 0; //doodler jump speed
-let initialVelocityY = -6; //starting velocity Y
-let gravity = 0.2;
+let initialVelocityY = -8; //starting velocity Y
+let gravity = 0.4;
 
 let platformWidth = 60;
 let platformHeight = 18;
