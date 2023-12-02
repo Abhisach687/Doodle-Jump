@@ -1,3 +1,9 @@
+/**
+ * Detects collision between two objects
+ * @param {Object} a - First object
+ * @param {Object} b - Second object
+ * @returns {boolean} - True if collision detected, false otherwise
+ */
 function detectCollision(a, b) {
   return (
     a.x < b.x + b.width && //a's top left corner doesn't reach b's top right corner
@@ -7,6 +13,9 @@ function detectCollision(a, b) {
   ); //a's bottom left corner passes b's top left corner
 }
 
+/**
+ * Updates the game score based on the doodler's vertical velocity
+ */
 function updateScore() {
   const points = Math.floor(50 * Math.random()); //(0-1) *50 --> (0-50)
   if (velocityY < 0) {

@@ -1,9 +1,14 @@
+/** Game board */
 let board;
+/** Context for drawing on the game board */
 let context;
 
+/** Image for the doodler character facing right */
 let doodlerRightImg;
+/** Image for the doodler character facing left */
 let doodlerLeftImg;
 
+/** Doodler character */
 let doodler = {
   img: null,
   x: doodlerX,

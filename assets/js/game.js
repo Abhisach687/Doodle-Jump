@@ -1,7 +1,13 @@
+/** Current game score */
 let score = 0;
+/** Maximum game score */
 let maxScore = 0;
+/** Game over flag */
 let gameOver = false;
 
+/**
+ * Updates the game state
+ */
 function update() {
   requestAnimationFrame(update);
   if (gameOver) {
@@ -69,6 +75,10 @@ function update() {
   }
 }
 
+/**
+ * Moves the doodler character based on keyboard input
+ * @param {Object} e - Keyboard event
+ */
 function moveDoodler(e) {
   if (e.code == "ArrowRight" || e.code == "KeyD") {
     //move right

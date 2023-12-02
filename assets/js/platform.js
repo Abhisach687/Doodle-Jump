@@ -1,6 +1,11 @@
+/** Array to store the platforms */
 let platformArray = [];
+/** Image for the platforms */
 let platformImg;
 
+/**
+ * Places the platforms on the game board
+ */
 function placePlatforms() {
   platformArray = [];
 
@@ -29,6 +34,9 @@ function placePlatforms() {
   }
 }
 
+/**
+ * Creates a new platform at the top of the game board
+ */
 function newPlatform() {
   const randomX = Math.floor((Math.random() * boardWidth * 3) / 4); //(0-1) * boardWidth*3/4
   const platform = {
