@@ -1,15 +1,15 @@
-let boardWidth = 360;
-let boardHeight = 576;
+const boardWidth = 360;
+const boardHeight = 576;
 
-let doodlerWidth = 46;
-let doodlerHeight = 46;
+const doodlerWidth = 46;
+const doodlerHeight = 46;
 let doodlerX = boardWidth / 2 - doodlerWidth / 2;
 let doodlerY = (boardHeight * 7) / 8 - doodlerHeight;
 
 let velocityX = 0;
 let velocityY = 0; //doodler jump speed
-let initialVelocityY = -8; //starting velocity Y
-let gravity = 0.4;
+const initialVelocityY = -8; //starting velocity Y
+const gravity = 0.4;
 
-let platformWidth = 60;
-let platformHeight = 18;
+const platformWidth = 60;
+const platformHeight = 18;
